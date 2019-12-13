@@ -1,19 +1,21 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom';
+
 export default props => (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
         <div className="navbar-header">
-            <a className="navbar-brand" href="/todos">
+            <Link to={'/todos'} className="navbar-brand">
                 <i className="fa fa-calendar-check"/> Todo App
-            </a>
+            </Link>
         </div>
         <div id="navbar" className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <a className="nav-link" href="/todos" >Tarefas</a>
+                    <Link to={'/todos'} className="nav-link"> Home </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/about">Sobre</a>
+                    <Link to={'/about'} className="nav-link">Sobre</Link>
                 </li>
             </ul>
         </div>
